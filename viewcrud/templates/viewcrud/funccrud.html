@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>싀알류듸연습</title>
+</head>
+<body>
+    <a href="{% url 'newblog' %}">글쓰기 </a>
+
+    {% for blog in blogs %}
+        <h2>{{blog.title}}</h2>
+        <p>{{blog.body}}</p>
+
+        <hr>
+    {% endfor %}
+
+
+    
+</body>
+
+
+
+
+
+</html>
